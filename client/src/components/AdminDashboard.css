@@ -1,0 +1,233 @@
+.admin-dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-header h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .logout-button {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+  
+  .form-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .form-group input, 
+  .form-group textarea, 
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .form-group.checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group.checkbox label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  
+  .form-group.checkbox input {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .add-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-button:hover {
+    background-color: #357abd;
+  }
+  
+  .menu-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-section h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .menu-items-list {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+  
+  .menu-content {
+    flex: 1;
+  }
+  
+  .menu-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+  }
+  
+  .menu-content p {
+    margin: 0.25rem 0;
+    color: #666;
+  }
+  
+  .menu-content .price {
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .menu-content .category {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .menu-content .available {
+    color: #28a745;
+  }
+  
+  .menu-content .unavailable {
+    color: #dc3545;
+  }
+  
+  .menu-actions {
+    margin-left: 1rem;
+  }
+  
+  .delete-button {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .error-message {
+    background-color: #fff3f3;
+    color: #dc3545;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .menu-item {
+      flex-direction: column;
+    }
+  
+    .menu-actions {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+  .image-preview {
+    margin: 10px 0;
+  }
+  
+  .menu-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .menu-image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }

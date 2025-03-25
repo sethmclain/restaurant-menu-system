@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+}
+
+.app-nav {
+  background-color: #333;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}

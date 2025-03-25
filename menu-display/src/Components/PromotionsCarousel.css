@@ -1,0 +1,88 @@
+.promotions-carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .promotion-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .promotion-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .promotion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .promotion-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .indicator.active {
+    background-color: white;
+  }
+  
+  .promotions-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #666;
+  }
+  
+  @media (max-width: 1200px) {
+    .promotion-content h3 {
+      font-size: 1.8rem;
+    }
+  
+    .promotion-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .promotion-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .promotion-content p {
+      font-size: 1rem;
+    }
+  
+    .promotion-content {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .promotion-content {
+      padding: 15px;
+    }
+  }

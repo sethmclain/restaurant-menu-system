@@ -1,0 +1,385 @@
+/* SuperuserDashboard.css */
+.superuser-dashboard {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .dashboard-header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-content h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .header-content h2 {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .logout-button {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-header h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .add-button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
+  
+  .user-list {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .user-item.selected {
+    background-color: #e9ecef;
+  }
+  
+  .user-info h4 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .user-info p {
+    margin: 0.25rem 0 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .delete-button {
+    padding: 0.25rem 0.5rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .main-content {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .user-header h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .tab-buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .tab-buttons button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .select-user-prompt {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+  }
+  
+  .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox input {
+    width: auto;
+    margin-right: 8px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0069d9;
+  }
+  
+  .submit-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .menu-items-grid,
+  .promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .menu-item-card,
+  .promotion-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .menu-item-image img,
+  .promotion-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .menu-item-details,
+  .promotion-details {
+    padding: 15px;
+  }
+  
+  .menu-item-details h4,
+  .promotion-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .description {
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .menu-item-info,
+  .promotion-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .category {
+    background-color: #e9ecef;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .availability {
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  
+  .available {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .unavailable {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .date-range {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+  
+  .status {
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  
+  .active {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .inactive {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .image-preview {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-content {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .sidebar {
+      width: 100%;
+    }
+    
+    .user-header {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    .tab-buttons {
+      width: 100%;
+      justify-content: center;
+    }
+  }
